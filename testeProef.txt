@@ -1,0 +1,86 @@
+FACIL
+------------------------------------------------------------
+1) Qual tipo de variavel é mais recomendado para armazenar o numero "81"?
+1-int.
+2-float.
+3-String.
+4-double.
+------------------------------------------------------------
+2) Complete: _______.out.println("eu sou um genio em java")
+1-Scanner.
+2-String.
+3-System.
+4-Input.
+------------------------------------------------------------
+3) Quando terminar uma linha de codigo deverá ser usada qual pontuação?
+1- ;
+2- .
+3- !
+4- ?
+------------------------------------------------------------
+
+MEDIO
+------------------------------------------------------------
+4) Diga o que a funçao faz:
+public double x(int n1, int n2, int n3, int sn){
+  int num1 = 10, num2 = 3, num3 = 2, sN;
+  double md;
+  sN = num1 + num2 + num3;
+  md = sN/3;
+  return md;
+}
+
+1- Retorna a soma de 3 numeros.
+2- Retorna a media de 3 numeros.
+3- Retorna o menor numero.
+4- Retorna a frase "15 anos".
+
+-------------------------------------------------------------
+5) Qual dessas opções não corresponde a uma boa pratica da programação?
+
+1-Não dedutivo: usar variaveis e metodos com nomes não representativos.
+2-Direto: vai direto ao ponto, não dá “voltas" para atingir seu objetivo.
+3-Sem duplicidade: não faz o que outra parte do código já faz.
+4-Simples: código fácil de entender.
+
+
+-------------------------------------------------------------
+6) Qual o erro no código abaixo:
+public void CalcularPar(int n1){
+	int num1 = 20;
+	if(num1/10 == 0);
+		system.out.print("É par");
+}
+1- Erro no retorno.
+2- Erro na variável.
+3- Erro no operador "/".
+4- Erro do parametro.
+-------------------------------------------------------------
+7)Quais desses são usados para loop(conjunto de instruções que percorre e repete o código um determinado 
+número de vezes)?
+1- while, for e do-while.
+2- for, while e array.
+3- while, float e String.
+4- for, do-while e void. 
+-------------------------------------------------------------
+DIFICIL
+
+8) Quais são os 4 pilares da Programação Orientada a Objetos ?
+1- Abstração de dados, encapsulamento, herança e polimorfismo.
+2- Agregação, herança, poliformismo e encapsulamento.
+3- Métodos, classes, variáveis e atributos.
+3- Abstração de dados, agregação, herança e polimorfismo.
+
+-------------------------------------------------------------
+9) Como se instanciar um objeto ?
+1- Pessoa pessoa = add Pessoa();
+2- Pessoa.pessoa();
+3- Pessoa pessoa = new Pessoa();
+4- New Pessoa() = pessoa;
+
+-----------------------------------------------------------------
+10) Considere x == 10. Qual dessas operações resultam em x == 20 ?
+a. x *= 5 * 2;
+b. x += 100 % 10;
+c. x += 20;
+d. x -= 30;
