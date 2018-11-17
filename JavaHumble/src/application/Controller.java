@@ -1,7 +1,5 @@
 package application;
 
-
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -67,7 +65,7 @@ public class Controller {
 	@FXML
 	private RadioButton radioFeminino;
 	
-	public void Login(ActionEvent event) {
+	public void Login(ActionEvent event) throws Exception {
 		
 		
 		try {
@@ -84,7 +82,17 @@ public class Controller {
 			ResultSet rs = stmt.executeQuery();
 			//
 			if(rs.next()) {
+				
 				JOptionPane.showMessageDialog(null, "Esse usuário existe");
+				Parent root = FXMLLoader.load(getClass().getResource("/application/selecionarLinguagem.fxml"));
+				Scene scene = new Scene(root, 600, 400);
+				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+				Stage primaryStage = new Stage();
+				primaryStage.setScene(scene);
+				primaryStage.show();
+				Main.getPrincipalStage().close();
+				Main.setPrincipalStage(primaryStage);
+				
 			}else{
 				JOptionPane.showMessageDialog(null, "Esse usuário não existe");
 			}
@@ -106,11 +114,14 @@ public class Controller {
 		Stage primaryStage = new Stage();
 		primaryStage.setScene(scene);
 		primaryStage.show();
+		Main.getPrincipalStage().close();
+		Main.setPrincipalStage(primaryStage);
+	//	backingTrack.TocarMusica.playMusic("Dr. Dre The next episode instrumental.mp3");
 		
 
 	}
 	
-	public void cadastroUsuario(ActionEvent event)  {
+	public void cadastroUsuario(ActionEvent event) throws Exception  {
 
 		try {
 			Connection con = ConnectionClass.ligar();
@@ -128,6 +139,17 @@ public class Controller {
 				stmt.setString(3, txtSenha.getText());
 				stmt.execute();
 				JOptionPane.showMessageDialog(null, "Saving Successfull");
+				
+				Parent root = FXMLLoader.load(getClass().getResource("/application/menuLogarCadastrar.fxml"));
+				Scene scene = new Scene(root, 600, 400);
+				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+				Stage primaryStage = new Stage();
+				primaryStage.setScene(scene);
+				primaryStage.show();
+				Main.getPrincipalStage().close();
+				Main.setPrincipalStage(primaryStage);
+				
+				
 			}else{
 				
 				lblSenhaIncorreta.setText("Senhas diferentes!");
@@ -153,9 +175,9 @@ public class Controller {
 	}
 
 
-	public void sair() {
-		btnSair.setOnAction(e -> System.exit(0));
-
+	public static void sair() {
+		//btnSair.setOnAction(e -> System.exit(0));
+		Main.getPrincipalStage().close();
 	}
 	
 	
