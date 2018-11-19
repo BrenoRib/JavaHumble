@@ -1,0 +1,187 @@
+1- Qual é o valor padrão do byte da variável ?
+A - 0 
+B - 0.0
+C = null
+D - indefinido
+
+R: A
+O byte da variável tem valor padrão de 0 se definido como uma instância/variável estática
+-----------------------------------------------------------------------------
+
+2- Qual é o valor padrão da variável Boolean ?
+A - true
+B - false
+C - null
+D - indefinido
+
+R: B
+A variável boolean tem valor padrão de "false" se definida como instância/variável estática
+-----------------------------------------------------------------------------
+
+3- O que é JRE ?
+A - JRE é um aplicativo GUI baseado em java
+B - JRE é "framework" de desenvolvimento de aplicativos
+C - JRE é uma implementação da JVM que executa programas em Java
+D - Nenhuma das acima
+
+R: C
+JRE é uma implementação da JVM, que fornece os requisitos minímos para execução de uma aplicação Java
+-----------------------------------------------------------------------------
+
+4- O que acontecerá se o modificador "static" for removido da assinatura do método principal?]
+A - Erro de compilação
+B - RunTime Error: NoSuchMethodError
+C - Programa irá compilar e executar sem qualquer saída
+D - O programa será compilado e executado para mostrar a saída necessária
+
+R: B
+O programa lança o erro "NoSuchMethodError" no tempo de execução
+-----------------------------------------------------------------------------
+
+5- Você precisa referenciar um valor armazenado em uma matriz chamada B na linha 7 da coluna 3. 
+Qual é a sintaxe correta em Java para encontrar o valor dessa variável?
+A - B[7,3]
+B - B[3][7]
+C - B[7][3]
+D - B[3,7]
+
+R: C
+A sintaxe correta é B[7][3]
+-----------------------------------------------------------------------------
+
+6- Qual palavra-chave mantém o método principal de retornar qualquer valor para quem chamou ?
+A - void
+B - restricted
+C - concealed
+D - exclusive
+
+R: A
+-----------------------------------------------------------------------------
+
+7- Qual será a saída ?
+class Number{
+int a;
+public static void main(String ar[]){
+a = 10;
+int b = 20;
+
+a = a +b;
+b = a - b;
+a = a - b;
+System.out.println("a = " + a);
+System.out.println("b " + b);
+}
+}
+
+A - a = 20, b = 10
+B - a = 10, b = 20
+C - a = 30, b = 10
+D - Compile-time error
+
+R: D
+Variável não-estática não pode ser referenciada de um contexto estático. 
+a é uma variável não estática, não pode ser referenciada a partir de main () que é estática.
+-----------------------------------------------------------------------------
+
+7- Qual é a diferença entre funções privadas e públicas?
+A - As funções públicas são as únicas que você pode baixar
+B - Funções públicas podem ser usadas por qualquer pessoa, 
+privada pode ser usada somente por outro código na classe que você está escrevendo
+C - As funções públicas são gratuitas, você tem que comprar as privadas
+D - Funções públicas não podem ser usadas
+
+R: B
+Funções públicas podem ser usadas por qualquer pessoa, 
+privada pode ser usada somente por outro código na classe que você está escrevendo
+-----------------------------------------------------------------------------
+
+8- O que é um "loop" ?
+A - Um novo tipo de applet.
+B - Um segmento de código a ser executado uma vez
+C - Um segmento de código a ser executado em um determinado período de tempo
+D - Um segmento de código a ser executado infinitas vezes
+
+R: C
+-----------------------------------------------------------------------------
+
+9- Um objeto pode ser... 
+A - Um algortimo
+B - Um programa
+C - Qualquer coisa
+D - Um container de datas
+R: C
+
+-----------------------------------------------------------------------------
+10- A classe B herda da classe A, o que não pode ser dito:
+A - A é uma superclasse de B
+B - B é uma subclasse de A
+C - B tem acesso aos membros privados de A
+D - B tem acesso aos membros protegidos de A
+
+R: C
+-----------------------------------------------------------------------------
+
+11- Qual é a palavra-chave usada pra criar um objeto em Java ?
+A - Sync
+B - This
+C - New
+D - New()
+
+R: New
+-----------------------------------------------------------------------------
+
+12- Qual palavra-chave você usaria se quisesse que uma classe usasse uma interface?
+A - implements
+B - main()
+C - extends
+D - new
+
+R: A
+Para usar uma interface, 
+use a palavra-chave implements com o nome da interface na linha de declaração da classe em seu código.
+-----------------------------------------------------------------------------
+
+13- Qual é o propósito de um construtor de classe?
+A - Para instanciar um objeto
+B - Para estender uma classe
+C - Para fazer objetos inicialmente terem certos valores quando eles são instanciados
+D - Para passar valores para métodos de uma classe
+
+R: C
+Inicializar um objeto quando ele é instanciado usando um construtor de classe 
+é uma maneira muito prática de trabalhar com objetos.
+-----------------------------------------------------------------------------
+
+14- Qual metodo é usado em todo programa em Java ?
+A - System.out.println()
+B - main()
+C - System.out.print()
+D - type()
+
+R: B
+O método main() é o que faz um programa Java funcionar. 
+System.out.print() e System.out.println() são usados para imprimir texto. 
+Não há nenhum método type() em Java.
+-----------------------------------------------------------------------------
+
+15- Quais dos seguintes componentes da "GUI" podem ser incluídos em um quadro Java?
+A - button
+B - textbox
+C - label
+D - textbox, label, button, images
+
+R: D
+textbot, label, button, images (e mais) podem ser incluídos em Java Frame.
+-----------------------------------------------------------------------------
+
+16- Qual tipo de loop você usaria para repetir uma tarefa um determinado número de vezes?
+A - switch
+B - while
+C - for
+D - do-while
+
+R: C
+O loop for é usado para repetir uma tarefa um número definido de vezes. 
+Os loops while e do-while repetem um segmento de código um número desconhecido de vezes. 
+Switch é uma declaração condicional, não um loop.
+
