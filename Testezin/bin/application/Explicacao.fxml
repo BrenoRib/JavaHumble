@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerExplicacao">
+   <children>
+      <Region layoutX="-2.0" layoutY="174.0" prefHeight="226.0" prefWidth="607.0" style="-fx-background-color: darkblue;" />
+      <AnchorPane layoutX="3.0" layoutY="2.0" prefHeight="72.0" prefWidth="600.0">
+         <children>
+            <Circle fill="#d2dae1" layoutX="37.0" layoutY="32.0" radius="23.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="lblNick" layoutX="70.0" layoutY="10.0" prefHeight="31.0" prefWidth="142.0" text="Rei do Jardim Botânico">
+               <font>
+                  <Font name="System Bold" size="11.5" />
+               </font>
+            </Label>
+            <Label fx:id="lblNivel" layoutX="219.0" layoutY="17.0" text="Nível">
+               <font>
+                  <Font name="Yu Gothic Bold" size="12.5" />
+               </font>
+            </Label>
+            <Label fx:id="lblNumNivel" layoutX="254.0" layoutY="17.0" prefHeight="16.0" prefWidth="26.0" text="0">
+               <font>
+                  <Font name="Yu Gothic Bold" size="12.0" />
+               </font></Label>
+            <ProgressBar fx:id="barraprogress" layoutX="70.0" layoutY="36.0" prefHeight="18.0" prefWidth="197.0" progress="0.23" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="14.0" layoutY="136.0" prefWidth="123.0" text="Resposta errada !!">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font></Label>
+      <Label fx:id="lblExplicacao" layoutX="32.0" layoutY="192.0" prefHeight="31.0" prefWidth="90.0" text="Explicação...." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.5" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
